@@ -137,11 +137,12 @@
             android:layout_height="@dimen/dp_100"
             android:visibility="gone">
             <!--用来显示宝藏信息的卡片(选中藏宝时)-->
-            <!--<com.feicuiedu.hunttreasure.custom.TreasureView-->
-                <!--android:id="@+id/treasureView"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:layout_gravity="center"></com.feicuiedu.hunttreasure.custom.TreasureView>-->
+            <com.example.zmapp.treasureapp.custom.TreasureView
+                android:id="@+id/treasureView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+            </com.example.zmapp.treasureapp.custom.TreasureView>
 
             <!--用来录入宝藏信息的卡片(藏宝时)-->
             <include

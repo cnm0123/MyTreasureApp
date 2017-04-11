@@ -33,13 +33,14 @@
             android:layout_height="220dp" />
 
         <!--宝藏的信息卡片-->
-        <!--
-        <com.feicuiedu.hunttreasure.custom.TreasureView
+
+        <com.example.zmapp.treasureapp.custom.TreasureView
             android:id="@+id/detail_treasure"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"></com.feicuiedu.hunttreasure.custom.TreasureView>
--->
+            android:layout_gravity="center">
+        </com.example.zmapp.treasureapp.custom.TreasureView>
+
 
         <include
             layout="@layout/content_detail"

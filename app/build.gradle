@@ -62,4 +62,6 @@ dependencies {
     //picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
 
+    // 图片剪切
+    compile 'org.hybridsquad.android.photocropper:library:2.1.0'
 }

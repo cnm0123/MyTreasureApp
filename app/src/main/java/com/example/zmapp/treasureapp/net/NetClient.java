@@ -1,6 +1,7 @@
 package com.example.zmapp.treasureapp.net;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -23,7 +24,8 @@ public class    NetClient {
 
     private NetClient() {
 
-        mGson = new Gson();
+        // 设置GSON的非严格模式setLenient()
+        mGson = new GsonBuilder().setLenient().create();
 
         // 日志拦截器
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
@@ -42,7 +44,7 @@ public class    NetClient {
                 .baseUrl(BASE_URL)// 必须要加的BASEURL
                 .client(mOkHttpClient)// 添加OkHttpClient
                 // 添加转换器
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(mGson))
                 .build();
     }
 

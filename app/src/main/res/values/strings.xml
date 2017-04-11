@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">地理寻宝</string>
+    <string name="app_name">地鼠寻宝</string>
     <string name="register">注册</string>
     <string name="login">登录</string>
     <string name="account">我的账号</string>
@@ -67,4 +67,5 @@
     <string name="size_big">大</string>
     <string name="find_treasure">找到宝藏</string>
     <string name="navigation">开始导航</string>
+    <string name="account_msg">个人信息</string>
 </resources>
